@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff7f0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8B0000;
+  padding: 0.2rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px;
+  margin-right: 0.75rem;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.brand-link:hover .brand-name {
+  color: #FFD700;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.7);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #FFD700;
+  color: #8B0000;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url('adobo.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.hero-logo {
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem; 
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #FFF0E6;
+}
+
+.section h2 {
+  color: #c90000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.dish {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.dish:hover {
+  transform: scale(1.05);
+}
+
+.dish img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.dish h3 {
+  color: #8B0000;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.dish p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.order-btn {
+  display: inline-block;
+  background-color: #FFD700;
+  color: #8B0000;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.order-btn:hover {
+  background-color: #8B0000;
+  color: #fff;
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#about .about-content {
+max-width: 900px;
+margin: 0 auto;
+font-size: 1.1rem;
+line-height: 1.8;
+color: #fff; 
+text-align: justify;
+background-color: rgba(0, 0, 0, 0.5); 
+padding: 1.5rem;
+border-radius: 10px; 
+}
+#about {
+background-image: url(aboutus.jpeg); 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 3rem 1.5rem;
+text-align: center;
+color: white;
+}
+
+.about-content img {
+display: block;         
+margin: 0 auto;         
+max-width: 300px;      
+height: auto; 
+}
+
+#about p {
+margin-bottom: 1rem;
+}
+
+#about h2 {
+font-size: 2.5rem;
+color: #ffffff;
+text-align: center;
+margin-bottom: 2rem;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #640202;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .location {
+  font-weight: bold;
+}
